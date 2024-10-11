@@ -1,33 +1,6 @@
-<<<<<<< HEAD
-// test
-const { Rectangle, Circle } = require('../Problems/P005');
-describe('rectangle tests', () => {
-  test('should return area of rectangle', () => {
-    const rectangle = new Rectangle(5, 2);
-    expect(rectangle.getArea()).toBe(10);
-  });
 
-  test('should return perimeter of rectangle', () => {
-    const rectangle = new Rectangle(5, 2);
-    expect(rectangle.getPerimeter()).toBe(14);
-  });
-});
 
-describe('circle tests', () => {
-  test('should return area of circle', () => {
-    const circle = new Circle(5);
-    expect(circle.getArea()).toBe(Math.PI * 25);
-  });
 
-  test('should return perimeter of circle', () => {
-    const circle = new Circle(5);
-    expect(circle.getPerimeter()).toBe(2 * Math.PI * 5);
-  });
-
-  test('should return diameter of circle', () => {
-    const circle = new Circle(5);
-    expect(circle.getDiameter()).toBe(10);
-=======
 const {
   canExecuteFastAttack,
   canSpy,
@@ -83,6 +56,6 @@ describe('canFreePrisoner', () => {
     expect(canFreePrisoner(false, true, true, true)).toBe(false); // archer awake
     expect(canFreePrisoner(false, false, false, true)).toBe(false); // prisoner not awake
     expect(canFreePrisoner(false, false, true, false)).toBe(false); // pet not present
->>>>>>> c1449dd6566b91b90dc3296f1c4eb70971ec4154
+    expect(canFreePrisoner(false, false, false, false)).toBe(false); // all asleep
   });
 });
